@@ -19,6 +19,8 @@ This example assumes that below mentioned prerequisites are in place before cons
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | project\_id | The project ID to deploy to | `string` | n/a | yes |
+| location | The location to deploy to | `string` | n/a | yes |
+| image_url | The image_url to deploy to | `string` | n/a | yes |
 
 ## Outputs
 
