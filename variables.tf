@@ -19,6 +19,11 @@ variable "project_id" {
   type        = string
 }
 
+variable "name" {
+  description = "The name of service"
+  type        = string
+}
+
 variable "location" {
   description = "The location to deploy to"
   type        = string

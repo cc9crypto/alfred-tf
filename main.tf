@@ -25,7 +25,7 @@ module "cloud_run_v2" {
   source  = "GoogleCloudPlatform/cloud-run/google//modules/v2"
   version = "~> 0.12"
 
-  service_name = "ci-cloud-run-v2"
+  service_name = var.name
   project_id   = var.project_id
   location     = "us-central1"
   service_account = module.service_account.email
