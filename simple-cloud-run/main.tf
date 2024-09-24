@@ -17,7 +17,7 @@ module "service_account" {
   source     = "terraform-google-modules/service-accounts/google"
   version    = "~> 4.2"
   project_id = var.project_id
-  prefix     = "sa-cloud-run"
+  prefix     = var.sa_name
   names      = ["simple"]
 }
 
@@ -32,8 +32,8 @@ module "cloud_run_v2" {
   
   containers = [
     {
-      container_image = "us-docker.pkg.dev/cloudrun/container/hello"
-      container_name  = "hello-world"
+      container_image = var.image_url
+      container_name  = var.name
     }
   ]
 }
