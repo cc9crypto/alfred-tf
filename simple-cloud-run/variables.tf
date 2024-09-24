@@ -34,4 +34,7 @@ variable "image_url" {
   type        = string
 }
 
-
+variable "sa_name" {
+  description = "service account name"
+  type        = string
+}
